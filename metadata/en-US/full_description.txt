@@ -1,8 +1,4 @@
-# Dummy repo for storing lineage images
-
-* Images disabled
-* Javascript disabled
-
+# Jelly Browser
 Jelly browser with ads blocker, support for android 6.0+, a few ui changes and some bug fixes.
 Ads blocker and favicon in search bar based on this: https://github.com/CarbonROM/android_packages_apps_Quarks
 
@@ -29,20 +25,13 @@ Ads blocker and favicon in search bar based on this: https://github.com/CarbonRO
 ### More Search-engine(s):
 chosen one (via /Settings/) triggered, from any selected text (anywhere via longpress)
  * Gibiru
- * Mojeek
- * Qwant
  * SearX
  * StartPage
  * Swisscows
 
-## AOSP compilation: ***packages/apps/Quarks/***
-```
-use branch -b jQuarksMore (org.lineageos.jelly)
-```
-
-```
-etc/sysconfig/?.xml 
-```
->^__hidden-api-whitelisted-app package="org.lineageos.jelly"/__^
+## AOSP compilation: use branch -b jQuarksMore (org.lineageos.jelly)
+Grant 
+> etc/sysconfig/?.xml 
+^hidden-api-whitelisted-app package="org.lineageos.jelly"/^
 
 prim-origin: https://github.com/LineageOS/android_packages_apps_Jelly
