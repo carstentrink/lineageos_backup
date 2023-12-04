@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            -   uses: actions/checkout@v2
+            -   uses: actions/checkout@v3
             
             -   name: enablee
                 run: chmod +x ./gradlew
@@ -18,7 +18,7 @@ jobs:
                 run: ./gradlew assembleDebug
 
             -   name: Upload artifact to GitHub
-                uses: actions/upload-artifact@v2
+                uses: actions/upload-artifact@v3
                 with:
                     name: app-debug.apk
 #                    path: ./**/*apk
